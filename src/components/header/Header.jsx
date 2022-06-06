@@ -1,3 +1,6 @@
+import { faBed, faCalendarDays, faCar, faPerson, faPlane, faTaxi } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import './header.css';
 
 const Header = () => {
@@ -6,18 +9,23 @@ const Header = () => {
             <div className='header-container'>
                 <div className='sub-nav-container'>
                     <div className='sub-nav-item active'>
+                        <FontAwesomeIcon icon={faBed} />
                         <span>Stays</span>
                     </div>
                     <div className='sub-nav-item'>
+                        <FontAwesomeIcon icon={faPlane} />
                         <span>Flights</span>
                     </div>
                     <div className='sub-nav-item'>
+                        <FontAwesomeIcon icon={faCar} />
                         <span>Car rentals</span>
                     </div>
                     <div className='sub-nav-item'>
+                        <FontAwesomeIcon icon={faBed} />
                         <span>Attractions</span>
                     </div>
                     <div className='sub-nav-item'>
+                        <FontAwesomeIcon icon={faTaxi} />
                         <span>Airport taxis</span>
                     </div>
                 </div>
@@ -27,12 +35,21 @@ const Header = () => {
                     <button>Sign in/Register</button>
                 </div>
                 <div className='search-bar-container'>
-                    <form className='search-input'>
+                    <div className='search-input'>
+                        <FontAwesomeIcon icon={faBed} className='headerIcon' />
                         <input className='search-form-control' type='text' placeholder='Where are you going?' />
-                    </form>
-                    <div>Calendar</div>
-                    <div>Options</div>
-                    <div>Search Button</div>
+                    </div>
+                    <div className='search-input'>
+                        <FontAwesomeIcon icon={faCalendarDays} className='headerIcon' />
+                        <input className='search-form-control' type='text' placeholder='Calendar' />
+                    </div>
+                    <div className='search-input'>
+                        <FontAwesomeIcon icon={faPerson} className='headerIcon' />
+                        <input className='search-form-control' type='text' placeholder='Options' />
+                    </div>
+                    <div className='search-input'>
+                        <button className='search-btn'>Search</button>
+                    </div>
                 </div>
             </div>
         </div>

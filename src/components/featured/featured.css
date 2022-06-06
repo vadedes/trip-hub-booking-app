@@ -1,0 +1,34 @@
+.featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1200px;
+    width: 100%;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.featuredItem {
+    width: auto;
+    height: 350px;
+    position: relative;
+    margin-top: 4rem;
+}
+
+.featuredImg {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    position: static;
+}
+
+.featuredTitles {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    top: auto;
+    width: 100%;
+    z-index: 5;
+    color: white;
+}
